@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="ground" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4c5565"/>
+      <stop offset="0.55" stop-color="#333a46"/>
+      <stop offset="1" stop-color="#242932"/>
+    </linearGradient>
+    <linearGradient id="amber" x1="0" y1="0" x2="0.25" y2="1">
+      <stop offset="0" stop-color="#ffbb46"/>
+      <stop offset="1" stop-color="#ef8f0c"/>
+    </linearGradient>
+    <linearGradient id="amberDim" x1="0" y1="0" x2="0.25" y2="1">
+      <stop offset="0" stop-color="#e79a1c"/>
+      <stop offset="1" stop-color="#c9760a"/>
+    </linearGradient>
+    <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#e8edf5"/>
+      <stop offset="1" stop-color="#b4bece"/>
+    </linearGradient>
+    <filter id="lift" x="-25%" y="-25%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#11141a" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <rect width="512" height="512" rx="112" fill="url(#ground)"/>
+
+  <g filter="url(#lift)">
+    <!-- two queue items sweeping right; the second trails to imply motion -->
+    <rect x="104" y="132" width="196" height="46" rx="23" fill="url(#bar)"/>
+    <rect x="142" y="200" width="158" height="46" rx="23" fill="url(#bar)" opacity="0.6"/>
+
+    <!-- sweep direction -->
+    <path d="M326 128 L432 189 L326 250 Z" fill="url(#amber)"/>
+
+    <!-- the tray they land in: back rim, then the front face catching the light -->
+    <path d="M92 306 h328 v34 h-328 Z" fill="url(#amberDim)"/>
+    <path d="M92 330 h328 v30 a46 46 0 0 1 -46 46 h-236 a46 46 0 0 1 -46 -46 Z" fill="url(#amber)"/>
+  </g>
+</svg>
