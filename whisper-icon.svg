@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="ground" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4c5565"/><stop offset="0.55" stop-color="#333a46"/><stop offset="1" stop-color="#242932"/>
+    </linearGradient>
+    <linearGradient id="amber" gradientUnits="userSpaceOnUse" x1="0" y1="168" x2="0" y2="320">
+      <stop offset="0" stop-color="#ffbb46"/><stop offset="1" stop-color="#ef8f0c"/>
+    </linearGradient>
+    <linearGradient id="bubble" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#eef2f8"/><stop offset="1" stop-color="#b9c3d2"/>
+    </linearGradient>
+    <filter id="lift" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#11141a" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#ground)"/>
+  <g filter="url(#lift)">
+    <!-- speech bubble: what goes in is speech -->
+    <path d="M96 128 h320 a28 28 0 0 1 28 28 v176 a28 28 0 0 1 -28 28 h-196 l-62 52 v-52 h-62 a28 28 0 0 1 -28 -28 v-176 a28 28 0 0 1 28 -28 Z" fill="url(#bubble)"/>
+    <!-- waveform: what comes out is text-ready audio -->
+    <g stroke="url(#amber)" stroke-width="22" stroke-linecap="round" fill="none">
+      <line x1="156" y1="222" x2="156" y2="266"/>
+      <line x1="204" y1="196" x2="204" y2="292"/>
+      <line x1="252" y1="168" x2="252" y2="320"/>
+      <line x1="300" y1="200" x2="300" y2="288"/>
+      <line x1="348" y1="230" x2="348" y2="258"/>
+    </g>
+  </g>
+</svg>
