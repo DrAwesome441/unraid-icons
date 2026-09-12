@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="ground" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4c5565"/><stop offset="0.55" stop-color="#333a46"/><stop offset="1" stop-color="#242932"/>
+    </linearGradient>
+    <linearGradient id="coral" x1="0" y1="0" x2="0.2" y2="1">
+      <stop offset="0" stop-color="#ff8a66"/><stop offset="1" stop-color="#e0384f"/>
+    </linearGradient>
+    <linearGradient id="coralDim" x1="0" y1="0" x2="0.2" y2="1">
+      <stop offset="0" stop-color="#e2604f"/><stop offset="1" stop-color="#b52a45"/>
+    </linearGradient>
+    <linearGradient id="note" gradientUnits="userSpaceOnUse" x1="200" y1="60" x2="330" y2="240">
+      <stop offset="0" stop-color="#f7f3ea"/><stop offset="1" stop-color="#c9c2b4"/>
+    </linearGradient>
+    <filter id="lift" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#11141a" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#ground)"/>
+
+  <!-- sound leaving the box, faint like the sweep lines on the sweeparr icon -->
+  <g stroke="#e8edf5" stroke-linecap="round" fill="none" opacity="0.18">
+    <path d="M392 150 q34 40 0 82" stroke-width="14"/>
+    <path d="M430 118 q60 72 0 146" stroke-width="14"/>
+  </g>
+
+  <g filter="url(#lift)">
+    <!-- open box: interior, then the note rising out, then the front face and flaps over it -->
+    <path d="M150 212 h212 v52 h-212 z" fill="#3b2330"/>
+    <g transform="translate(0 -22) rotate(-8 256 200)">
+      <path d="M224 100 v130" stroke="url(#note)" stroke-width="18" stroke-linecap="round"/>
+      <path d="M318 78 v130" stroke="url(#note)" stroke-width="18" stroke-linecap="round"/>
+      <path d="M215 88 L327 62 v40 L215 128 z" fill="url(#note)"/>
+      <ellipse cx="206" cy="232" rx="30" ry="21" transform="rotate(-18 206 232)" fill="url(#note)"/>
+      <ellipse cx="300" cy="210" rx="30" ry="21" transform="rotate(-18 300 210)" fill="url(#note)"/>
+    </g>
+    <path d="M140 258 h232 a12 12 0 0 1 12 12 v138 a16 16 0 0 1 -16 16 h-224 a16 16 0 0 1 -16 -16 v-138 a12 12 0 0 1 12 -12 z" fill="url(#coral)"/>
+    <path d="M140 258 L60 226 L162 194 L256 226 z" fill="url(#coralDim)"/>
+    <path d="M372 258 L452 226 L350 194 L256 226 z" fill="url(#coralDim)"/>
+    <path d="M256 258 v166" stroke="#a3253f" stroke-width="6" opacity="0.55"/>
+  </g>
+</svg>
