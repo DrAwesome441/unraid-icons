@@ -1,34 +1,18 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <!-- subs-ocr: video frame + subtitle lines read through OCR scan corners, teal -->
   <defs>
-    <linearGradient id="ground" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#4c5565"/><stop offset="0.55" stop-color="#333a46"/><stop offset="1" stop-color="#242932"/>
-    </linearGradient>
-    <linearGradient id="light" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#f2f5fa"/><stop offset="1" stop-color="#c3ccd9"/>
-    </linearGradient>
-    <linearGradient id="accent" gradientUnits="userSpaceOnUse" x1="0" y1="284" x2="0" y2="344"><stop offset="0" stop-color="#4fe0cb"/><stop offset="1" stop-color="#1fa894"/></linearGradient>
-    <filter id="lift" x="-30%" y="-30%" width="160%" height="160%">
-      <feDropShadow dx="0" dy="6" stdDeviation="9" flood-color="#11141a" flood-opacity="0.42"/>
-    </filter>
+    <linearGradient id="teal" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3fd8c2"/><stop offset="1" stop-color="#159e8a"/></linearGradient>
   </defs>
-  <!-- house style: graphite ground, glyphs held inside the 96-416 keyline, 24px strokes, one accent -->
-  <rect width="512" height="512" rx="112" fill="url(#ground)"/>
-  <g filter="url(#lift)">
-    <!-- the picture: a video frame -->
-    <rect x="88" y="128" width="336" height="256" rx="40" fill="url(#light)"/>
-    <!-- play mark: it is video -->
-    <path d="M238 168 v56 a6 6 0 0 0 9 5 l44 -28 a6 6 0 0 0 0 -10 l-44 -28 a6 6 0 0 0 -9 5 Z" fill="#a9b3c3"/>
-    <!-- subtitle text being read off the frame -->
-    <g stroke="url(#accent)" stroke-width="22" stroke-linecap="round">
+  <g transform="translate(256 256) scale(1.3095) translate(-256.0 -256.0)">
+    <rect x="88" y="128" width="336" height="256" rx="40" fill="url(#teal)"/>
+    <path d="M238 168 v56 a6 6 0 0 0 9 5 l44 -28 a6 6 0 0 0 0 -10 l-44 -28 a6 6 0 0 0 -9 5 Z" fill="#ffffff" opacity="0.55"/>
+    <g stroke="#ffffff" stroke-width="22" stroke-linecap="round">
       <line x1="176" y1="290" x2="336" y2="290"/>
       <line x1="208" y1="330" x2="304" y2="330"/>
     </g>
-    <!-- scan corners: OCR -->
-    <g stroke="#2a303a" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" fill="none">
-      <path d="M136 280 v-24 h24"/>
-      <path d="M376 280 v-24 h-24"/>
-      <path d="M136 340 v24 h24"/>
-      <path d="M376 340 v24 h-24"/>
+    <g stroke="#ffffff" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" fill="none">
+      <path d="M136 280 v-24 h24"/><path d="M376 280 v-24 h-24"/>
+      <path d="M136 340 v24 h24"/><path d="M376 340 v24 h-24"/>
     </g>
   </g>
 </svg>

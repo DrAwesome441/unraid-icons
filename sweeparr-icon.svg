@@ -1,35 +1,22 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <!-- sweeparr: broom mid-sweep, amber -->
   <defs>
-    <linearGradient id="ground" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#4c5565"/><stop offset="0.55" stop-color="#333a46"/><stop offset="1" stop-color="#242932"/>
-    </linearGradient>
-    <linearGradient id="light" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#f2f5fa"/><stop offset="1" stop-color="#c3ccd9"/>
-    </linearGradient>
-    <linearGradient id="accent" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffbb46"/><stop offset="1" stop-color="#ef8f0c"/></linearGradient>
-    <linearGradient id="accentDim" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e79a1c"/><stop offset="1" stop-color="#c9760a"/></linearGradient>
-    <filter id="lift" x="-30%" y="-30%" width="160%" height="160%">
-      <feDropShadow dx="0" dy="6" stdDeviation="9" flood-color="#11141a" flood-opacity="0.42"/>
-    </filter>
+    <linearGradient id="amber" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffbe4a"/><stop offset="1" stop-color="#f08c0a"/></linearGradient><linearGradient id="amberDim" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e39317"/><stop offset="1" stop-color="#c46f08"/></linearGradient>
   </defs>
-  <!-- house style: graphite ground, glyphs held inside the 96-416 keyline, 24px strokes, one accent -->
-  <rect width="512" height="512" rx="112" fill="url(#ground)"/>
-  <!-- the sweep: faint, evenly spaced arcs trailing the bristles -->
-  <g stroke="#e8edf5" stroke-width="14" stroke-linecap="round" fill="none" opacity="0.22">
-    <path d="M96 292 q34 28 84 38"/>
-    <path d="M92 340 q40 26 98 30"/>
-  </g>
-  <g filter="url(#lift)" transform="translate(-4 -22) rotate(-28 256 300)">
-    <!-- handle -->
-    <rect x="242" y="92" width="28" height="204" rx="14" fill="url(#light)"/>
-    <!-- ferrule -->
-    <rect x="208" y="284" width="96" height="36" rx="12" fill="url(#accentDim)"/>
-    <!-- bristle head -->
-    <path d="M222 318 h68 a10 10 0 0 1 9 6 l45 98 a10 10 0 0 1 -9 14 h-158 a10 10 0 0 1 -9 -14 l45 -98 a10 10 0 0 1 9 -6 Z" fill="url(#accent)"/>
-    <g stroke="#d07a0a" stroke-width="8" stroke-linecap="round">
+  <g transform="translate(256 256) scale(1.2754) translate(-237.5 -264.5)">
+    <g stroke="#ffc65e" stroke-width="16" stroke-linecap="round" fill="none">
+      <path d="M96 292 q34 28 84 38"/>
+      <path d="M92 340 q40 26 98 30"/>
+    </g>
+    <g transform="translate(-4 -22) rotate(-28 256 300)">
+      <rect x="240" y="92" width="32" height="204" rx="16" fill="#f4f7fb"/>
+      <rect x="208" y="284" width="96" height="36" rx="12" fill="url(#amberDim)"/>
+      <path d="M222 318 h68 a10 10 0 0 1 9 6 l45 98 a10 10 0 0 1 -9 14 h-158 a10 10 0 0 1 -9 -14 l45 -98 a10 10 0 0 1 9 -6 Z" fill="url(#amber)"/>
+      <g stroke="#cf7a08" stroke-width="8" stroke-linecap="round">
       <path d="M230 336 L204 418"/>
       <path d="M256 336 L256 418"/>
       <path d="M282 336 L308 418"/>
+      </g>
     </g>
   </g>
 </svg>

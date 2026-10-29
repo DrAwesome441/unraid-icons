@@ -1,33 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <!-- applebox: open box with a note rising out, coral -->
   <defs>
-    <linearGradient id="ground" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#4c5565"/><stop offset="0.55" stop-color="#333a46"/><stop offset="1" stop-color="#242932"/>
-    </linearGradient>
-    <linearGradient id="light" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#f2f5fa"/><stop offset="1" stop-color="#c3ccd9"/>
-    </linearGradient>
-    <linearGradient id="accent" gradientUnits="userSpaceOnUse" x1="0" y1="268" x2="0" y2="408"><stop offset="0" stop-color="#ff8a66"/><stop offset="1" stop-color="#e0384f"/></linearGradient>
-    <linearGradient id="accentDim" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d4504c"/><stop offset="1" stop-color="#a02642"/></linearGradient>
-    <filter id="lift" x="-30%" y="-30%" width="160%" height="160%">
-      <feDropShadow dx="0" dy="6" stdDeviation="9" flood-color="#11141a" flood-opacity="0.42"/>
-    </filter>
+    <linearGradient id="coral" gradientUnits="userSpaceOnUse" x1="0" y1="256" x2="0" y2="412"><stop offset="0" stop-color="#ff7a62"/><stop offset="1" stop-color="#e3344f"/></linearGradient><linearGradient id="coralDim" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d84a4c"/><stop offset="1" stop-color="#a82442"/></linearGradient>
   </defs>
-  <!-- house style: graphite ground, glyphs held inside the 96-416 keyline, 24px strokes, one accent -->
-  <rect width="512" height="512" rx="112" fill="url(#ground)"/>
-  <g filter="url(#lift)">
-    <!-- flaps folded open, hinged on the rim -->
-    <path d="M156 256 L96 214 L132 180 L204 236 Z" fill="url(#accentDim)" stroke="url(#accentDim)" stroke-width="12" stroke-linejoin="round"/>
-    <path d="M356 256 L416 214 L380 180 L308 236 Z" fill="url(#accentDim)" stroke="url(#accentDim)" stroke-width="12" stroke-linejoin="round"/>
-    <!-- the note rising out of the box (drawn first so the box front covers its base) -->
-    <g fill="url(#light)">
+  <g transform="translate(256 256) scale(1.3253) translate(-256.0 -255.0)">
+    <path d="M156 256 L96 214 L132 180 L204 236 Z" fill="url(#coralDim)" stroke="url(#coralDim)" stroke-width="12" stroke-linejoin="round"/>
+    <path d="M356 256 L416 214 L380 180 L308 236 Z" fill="url(#coralDim)" stroke="url(#coralDim)" stroke-width="12" stroke-linejoin="round"/>
+    <g fill="#f4f7fb">
       <rect x="227" y="126" width="18" height="116" rx="9"/>
       <rect x="315" y="106" width="18" height="120" rx="9"/>
       <path d="M227 118 L333 98 v36 L227 154 Z"/>
       <ellipse cx="214" cy="240" rx="30" ry="22" transform="rotate(-20 214 240)"/>
       <ellipse cx="302" cy="224" rx="30" ry="22" transform="rotate(-20 302 224)"/>
     </g>
-    <!-- box front -->
-    <path d="M160 256 h192 a8 8 0 0 1 8 8 v124 a24 24 0 0 1 -24 24 h-160 a24 24 0 0 1 -24 -24 v-124 a8 8 0 0 1 8 -8 Z" fill="url(#accent)"/>
+    <path d="M160 256 h192 a8 8 0 0 1 8 8 v124 a24 24 0 0 1 -24 24 h-160 a24 24 0 0 1 -24 -24 v-124 a8 8 0 0 1 8 -8 Z" fill="url(#coral)"/>
     <path d="M256 256 v156" stroke="#a3253f" stroke-width="6" opacity="0.5"/>
   </g>
 </svg>

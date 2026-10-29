@@ -1,31 +1,24 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <!-- bookworm: book + chat bubble (the Discord book bot), green -->
   <defs>
-    <linearGradient id="ground" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#4c5565"/><stop offset="0.55" stop-color="#333a46"/><stop offset="1" stop-color="#242932"/>
-    </linearGradient>
-    <linearGradient id="light" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#f2f5fa"/><stop offset="1" stop-color="#c3ccd9"/>
-    </linearGradient>
-    <linearGradient id="accent" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#b8e862"/><stop offset="1" stop-color="#78b52c"/></linearGradient>
-    <linearGradient id="accentDim" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8fc23e"/><stop offset="1" stop-color="#5d8f1e"/></linearGradient>
-    <filter id="lift" x="-30%" y="-30%" width="160%" height="160%">
-      <feDropShadow dx="0" dy="6" stdDeviation="9" flood-color="#11141a" flood-opacity="0.42"/>
-    </filter>
+    <linearGradient id="green" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9be04f"/><stop offset="1" stop-color="#58a62a"/></linearGradient><linearGradient id="greenDim" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6fb935"/><stop offset="1" stop-color="#3f7f1c"/></linearGradient>
+    <mask id="gap" maskUnits="userSpaceOnUse" x="0" y="0" width="512" height="512">
+      <rect width="512" height="512" fill="#fff"/>
+      <path d="M300 236 h80 a40 40 0 0 1 40 40 v32 a40 40 0 0 1 -40 40 h-44 l-36 28 v-28 a40 40 0 0 1 -40 -40 v-32 a40 40 0 0 1 40 -40 Z" fill="#000" stroke="#000" stroke-width="28" stroke-linejoin="round"/>
+    </mask>
   </defs>
-  <!-- house style: graphite ground, glyphs held inside the 96-416 keyline, 24px strokes, one accent -->
-  <rect width="512" height="512" rx="112" fill="url(#ground)"/>
-  <g filter="url(#lift)" transform="translate(-20 0)">
-    <!-- the book: cover, spine and page edge -->
-    <path d="M152 96 h168 a24 24 0 0 1 24 24 v264 a24 24 0 0 1 -24 24 h-168 a24 24 0 0 1 -24 -24 v-264 a24 24 0 0 1 24 -24 Z" fill="url(#accent)"/>
-    <path d="M152 96 h20 v312 h-20 a24 24 0 0 1 -24 -24 v-264 a24 24 0 0 1 24 -24 Z" fill="url(#accentDim)"/>
-    <rect x="172" y="364" width="156" height="28" rx="6" fill="url(#light)"/>
-    <g stroke="#5d8f1e" stroke-width="12" stroke-linecap="round" opacity="0.7">
-      <line x1="212" y1="160" x2="304" y2="160"/>
-      <line x1="212" y1="192" x2="276" y2="192"/>
+  <g transform="translate(256 256) scale(1.4103) translate(-275.0 -252.0)">
+    <g mask="url(#gap)">
+      <rect x="128" y="96" width="216" height="312" rx="24" fill="url(#green)"/>
+      <path d="M152 96 h20 v312 h-20 a24 24 0 0 1 -24 -24 v-264 a24 24 0 0 1 24 -24 Z" fill="url(#greenDim)"/>
+      <rect x="172" y="364" width="156" height="28" rx="6" fill="#f4f7fb"/>
+      <g stroke="#ffffff" stroke-width="12" stroke-linecap="round" opacity="0.8">
+        <line x1="212" y1="160" x2="304" y2="160"/>
+        <line x1="212" y1="192" x2="276" y2="192"/>
+      </g>
     </g>
-    <!-- chat badge: it talks in Discord -->
-    <path d="M300 236 h80 a40 40 0 0 1 40 40 v32 a40 40 0 0 1 -40 40 h-44 l-36 28 v-28 a40 40 0 0 1 -40 -40 v-32 a40 40 0 0 1 40 -40 Z" fill="url(#light)" stroke="#2b313c" stroke-width="12" stroke-linejoin="round"/>
-    <g fill="#4a5262">
+    <path d="M300 236 h80 a40 40 0 0 1 40 40 v32 a40 40 0 0 1 -40 40 h-44 l-36 28 v-28 a40 40 0 0 1 -40 -40 v-32 a40 40 0 0 1 40 -40 Z" fill="#f4f7fb" stroke="#f4f7fb" stroke-width="4" stroke-linejoin="round"/>
+    <g fill="#58a62a">
       <circle cx="304" cy="292" r="11"/><circle cx="340" cy="292" r="11"/><circle cx="376" cy="292" r="11"/>
     </g>
   </g>
