@@ -3,19 +3,13 @@
   <defs>
     <linearGradient id="pink" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff7eab"/><stop offset="1" stop-color="#e0407a"/></linearGradient>
   </defs>
-  <circle cx="256" cy="256" r="232" fill="url(#pink)"/>
-  <g transform="translate(256 256) scale(1.12) translate(-256 -256)">
-  <rect x="176" y="108" width="160" height="296" rx="30" fill="#ffffff"/>
-  <rect x="194" y="132" width="124" height="220" rx="10" fill="#ffe6ef"/>
-  <g stroke="#f08db2" stroke-width="12" stroke-linecap="round">
-    <line x1="218" y1="164" x2="294" y2="164"/>
-    <line x1="218" y1="194" x2="270" y2="194"/>
-  </g>
-  <g fill="none" stroke="#e0407a" stroke-width="16" stroke-linecap="round">
-    <path d="M222 254 a72 72 0 0 1 72 72"/>
-    <path d="M222 286 a40 40 0 0 1 40 40"/>
-  </g>
-  <circle cx="226" cy="322" r="11" fill="#e0407a"/>
-  <rect x="236" y="372" width="40" height="10" rx="5" fill="#f4b3cb"/>
+  <g transform="translate(256 256) scale(1.1000) translate(-256.0 -256.0)">
+    <rect x="116" y="56" width="280" height="400" rx="44" fill="url(#pink)"/>
+    <rect x="140" y="84" width="232" height="316" rx="12" fill="#ffffff"/>
+    <g fill="none" stroke="#e0407a" stroke-width="24" stroke-linecap="round">
+      <path d="M204 190 a102 102 0 0 1 102 102"/>
+      <path d="M204 240 a52 52 0 0 1 52 52"/>
+    </g>
+    <circle cx="212" cy="284" r="17" fill="#e0407a"/>
   </g>
 </svg>

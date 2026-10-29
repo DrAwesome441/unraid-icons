@@ -3,19 +3,14 @@
   <defs>
     <linearGradient id="amber" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffbe4a"/><stop offset="1" stop-color="#f08c0a"/></linearGradient><linearGradient id="amberDim" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e39317"/><stop offset="1" stop-color="#c46f08"/></linearGradient>
   </defs>
-  <g transform="translate(256 256) scale(1.2754) translate(-237.5 -264.5)">
-    <g stroke="#ffc65e" stroke-width="16" stroke-linecap="round" fill="none">
-      <path d="M96 292 q34 28 84 38"/>
-      <path d="M92 340 q40 26 98 30"/>
-    </g>
+  <g transform="translate(256 256) scale(1.2754) translate(-268.0 -264.5)">
     <g transform="translate(-4 -22) rotate(-28 256 300)">
       <rect x="240" y="92" width="32" height="204" rx="16" fill="#f4f7fb"/>
       <rect x="208" y="284" width="96" height="36" rx="12" fill="url(#amberDim)"/>
       <path d="M222 318 h68 a10 10 0 0 1 9 6 l45 98 a10 10 0 0 1 -9 14 h-158 a10 10 0 0 1 -9 -14 l45 -98 a10 10 0 0 1 9 -6 Z" fill="url(#amber)"/>
       <g stroke="#cf7a08" stroke-width="8" stroke-linecap="round">
-      <path d="M230 336 L204 418"/>
-      <path d="M256 336 L256 418"/>
-      <path d="M282 336 L308 418"/>
+      <path d="M238.667 336 L221.333 418"/>
+      <path d="M273.333 336 L290.667 418"/>
       </g>
     </g>
   </g>
