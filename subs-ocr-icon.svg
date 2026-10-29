@@ -3,31 +3,32 @@
     <linearGradient id="ground" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#4c5565"/><stop offset="0.55" stop-color="#333a46"/><stop offset="1" stop-color="#242932"/>
     </linearGradient>
-    <linearGradient id="screen" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#eef2f8"/><stop offset="1" stop-color="#b9c3d2"/>
+    <linearGradient id="light" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f2f5fa"/><stop offset="1" stop-color="#c3ccd9"/>
     </linearGradient>
-    <linearGradient id="teal" gradientUnits="userSpaceOnUse" x1="0" y1="300" x2="0" y2="384">
-      <stop offset="0" stop-color="#4fe0cb"/><stop offset="1" stop-color="#1fa894"/>
-    </linearGradient>
+    <linearGradient id="accent" gradientUnits="userSpaceOnUse" x1="0" y1="284" x2="0" y2="344"><stop offset="0" stop-color="#4fe0cb"/><stop offset="1" stop-color="#1fa894"/></linearGradient>
     <filter id="lift" x="-30%" y="-30%" width="160%" height="160%">
-      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#11141a" flood-opacity="0.45"/>
+      <feDropShadow dx="0" dy="6" stdDeviation="9" flood-color="#11141a" flood-opacity="0.42"/>
     </filter>
   </defs>
+  <!-- house style: graphite ground, glyphs held inside the 96-416 keyline, 24px strokes, one accent -->
   <rect width="512" height="512" rx="112" fill="url(#ground)"/>
   <g filter="url(#lift)">
     <!-- the picture: a video frame -->
-    <rect x="80" y="108" width="352" height="296" rx="30" fill="url(#screen)"/>
+    <rect x="88" y="128" width="336" height="256" rx="40" fill="url(#light)"/>
+    <!-- play mark: it is video -->
+    <path d="M238 168 v56 a6 6 0 0 0 9 5 l44 -28 a6 6 0 0 0 0 -10 l-44 -28 a6 6 0 0 0 -9 5 Z" fill="#a9b3c3"/>
     <!-- subtitle text being read off the frame -->
-    <g stroke="url(#teal)" stroke-width="24" stroke-linecap="round">
-      <line x1="168" y1="318" x2="344" y2="318"/>
-      <line x1="200" y1="362" x2="312" y2="362"/>
+    <g stroke="url(#accent)" stroke-width="22" stroke-linecap="round">
+      <line x1="176" y1="290" x2="336" y2="290"/>
+      <line x1="208" y1="330" x2="304" y2="330"/>
     </g>
     <!-- scan corners: OCR -->
-    <g stroke="#2a303a" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" fill="none">
-      <path d="M130 312 v-26 h26"/>
-      <path d="M382 312 v-26 h-26"/>
-      <path d="M130 368 v26 h26"/>
-      <path d="M382 368 v26 h-26"/>
+    <g stroke="#2a303a" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" fill="none">
+      <path d="M136 280 v-24 h24"/>
+      <path d="M376 280 v-24 h-24"/>
+      <path d="M136 340 v24 h24"/>
+      <path d="M376 340 v24 h-24"/>
     </g>
   </g>
 </svg>

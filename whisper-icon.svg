@@ -3,27 +3,26 @@
     <linearGradient id="ground" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#4c5565"/><stop offset="0.55" stop-color="#333a46"/><stop offset="1" stop-color="#242932"/>
     </linearGradient>
-    <linearGradient id="amber" gradientUnits="userSpaceOnUse" x1="0" y1="168" x2="0" y2="320">
-      <stop offset="0" stop-color="#ffbb46"/><stop offset="1" stop-color="#ef8f0c"/>
+    <linearGradient id="light" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f2f5fa"/><stop offset="1" stop-color="#c3ccd9"/>
     </linearGradient>
-    <linearGradient id="bubble" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#eef2f8"/><stop offset="1" stop-color="#b9c3d2"/>
-    </linearGradient>
+    <linearGradient id="accent" gradientUnits="userSpaceOnUse" x1="0" y1="156" x2="0" y2="316"><stop offset="0" stop-color="#6cc4ff"/><stop offset="1" stop-color="#2f86e6"/></linearGradient>
     <filter id="lift" x="-30%" y="-30%" width="160%" height="160%">
-      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#11141a" flood-opacity="0.45"/>
+      <feDropShadow dx="0" dy="6" stdDeviation="9" flood-color="#11141a" flood-opacity="0.42"/>
     </filter>
   </defs>
+  <!-- house style: graphite ground, glyphs held inside the 96-416 keyline, 24px strokes, one accent -->
   <rect width="512" height="512" rx="112" fill="url(#ground)"/>
   <g filter="url(#lift)">
     <!-- speech bubble: what goes in is speech -->
-    <path d="M96 128 h320 a28 28 0 0 1 28 28 v176 a28 28 0 0 1 -28 28 h-196 l-62 52 v-52 h-62 a28 28 0 0 1 -28 -28 v-176 a28 28 0 0 1 28 -28 Z" fill="url(#bubble)"/>
-    <!-- waveform: what comes out is text-ready audio -->
-    <g stroke="url(#amber)" stroke-width="22" stroke-linecap="round" fill="none">
-      <line x1="156" y1="222" x2="156" y2="266"/>
-      <line x1="204" y1="196" x2="204" y2="292"/>
-      <line x1="252" y1="168" x2="252" y2="320"/>
-      <line x1="300" y1="200" x2="300" y2="288"/>
-      <line x1="348" y1="230" x2="348" y2="258"/>
+    <path d="M144 120 h224 a40 40 0 0 1 40 40 v152 a40 40 0 0 1 -40 40 h-148 l-50 42 v-42 h-26 a40 40 0 0 1 -40 -40 v-152 a40 40 0 0 1 40 -40 Z" fill="url(#light)" stroke="url(#light)" stroke-width="8" stroke-linejoin="round"/>
+    <!-- waveform: the audio being transcribed -->
+    <g stroke="url(#accent)" stroke-width="24" stroke-linecap="round">
+      <line x1="160" y1="208" x2="160" y2="264"/>
+      <line x1="208" y1="180" x2="208" y2="292"/>
+      <line x1="256" y1="156" x2="256" y2="316"/>
+      <line x1="304" y1="184" x2="304" y2="288"/>
+      <line x1="352" y1="212" x2="352" y2="260"/>
     </g>
   </g>
 </svg>
